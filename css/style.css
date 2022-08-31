@@ -26,3 +26,23 @@ body {
   color: #4A4A4F;
   margin-bottom: 32px;
 }
+.social__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 482px;
+}
+.social__tabs > li {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4A4A4F;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid #E1E1E6;
+}

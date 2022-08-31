@@ -27,4 +27,23 @@ body {
 		color: #4A4A4F;
 		margin-bottom: 32px;
 	}
+
+	&__tabs {
+		display: flex;
+		justify-content: space-between;
+		width: 482px;
+
+		&>li {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 26px;
+			color: #4A4A4F;
+		}
+
+	}
+}
+
+.divider {
+	width: 100%;
+	border: 1px solid #E1E1E6;
 }
