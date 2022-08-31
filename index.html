@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -42,9 +43,9 @@
 				</li>
 			</ul>
 			<hr class="divider">
-			<div class="card__slider_wrapper">
-				<div class="card__slider">
-					<div class="card">
+			<div class="swiper mySwiper card__slider_wrapper">
+				<div class="swiper-wrapper card__slider">
+					<div class="swiper-slide card">
 						<img src="images/promo_card.png" alt="Промо карточка" class="card__img">
 						<div class="card__promo">
 							<p class="card__text">
@@ -66,7 +67,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="card">
+					<div class="swiper-slide card">
 						<img src="images/promo_card.png" alt="Промо карточка" class="card__img">
 						<div class="card__promo">
 							<p class="card__text">
@@ -88,7 +89,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="card">
+					<div class="swiper-slide card">
 						<img src="images/promo_card.png" alt="Промо карточка" class="card__img">
 						<div class="card__promo">
 							<p class="card__text">
@@ -110,7 +111,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="card">
+					<div class="swiper-slide card">
 						<img src="images/promo_card.png" alt="Промо карточка" class="card__img">
 						<div class="card__promo">
 							<p class="card__text">
@@ -132,7 +133,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="card">
+					<div class="swiper-slide card">
 						<img src="images/promo_card.png" alt="Промо карточка" class="card__img">
 						<div class="card__promo">
 							<p class="card__text">
@@ -154,7 +155,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="card">
+					<div class="swiper-slide card">
 						<img src="images/promo_card.png" alt="Промо карточка" class="card__img">
 						<div class="card__promo">
 							<p class="card__text">
@@ -177,9 +178,13 @@
 						</div>
 					</div>
 				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</section>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
