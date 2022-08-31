@@ -57,13 +57,30 @@ body {
 
 .card {
 	width: 320px;
-	height: 472px;
+	max-height: 472px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
 	color: #4A4A4F;
 
-	&:hover {
-		overflow-y: auto;
+	&__slider {
+		margin-top: 32px;
+	}
+	&__promo {
+		padding: 26px 32px;
+		padding-right: 48px;
+		min-height: 548px;
+	}
+	&__hashtag {
+		margin-top: 26px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		&_link {
+			display: block;
+			margin-right: 6px;
+			text-decoration: none;
+			color: #2244CC;
+		}
 	}
 }

@@ -54,12 +54,34 @@ body {
 
 .card {
   width: 320px;
-  height: 472px;
+  max-height: 472px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #4A4A4F;
 }
-.card:hover {
-  overflow-y: auto;
+.card__slider {
+  margin-top: 32px;
+}
+.card__promo {
+  padding: 26px 32px;
+  padding-right: 48px;
+  min-height: 548px;
+}
+.card__hashtag {
+  margin-top: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.card__hashtag_link {
+  display: block;
+  margin-right: 6px;
+  text-decoration: none;
+  color: #2244CC;
 }
