@@ -2,6 +2,21 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after,
+.swiper-pagination {
+	display: none;
+}
+
+
 .container {
 	margin: 0 auto;
 	width: 1372px;
@@ -51,6 +66,7 @@ body {
 
 .divider {
 	margin: 0;
+	margin-bottom: 32px;
 	width: 100%;
 	border: 1px solid #E1E1E6;
 }
@@ -68,7 +84,6 @@ body {
 		display: flex;
 		&_wrapper {
 			position: relative;
-			padding-top: 32px;
 			overflow: hidden;
 		}
 	}
