@@ -3,11 +3,11 @@ body {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 24
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 300,
+		'GRAD' 0,
+		'opsz' 20;
 }
 
 .swiper-button-prev::after,
@@ -16,6 +16,18 @@ body {
 	display: none;
 }
 
+.swiper-button-next,
+.swiper-button-prev {}
+
+.swiper span {
+	display: flex;
+	margin-top: 0;
+	top: 178px;
+	width: 44px;
+	height: 44px;
+	color: #353545;
+	background-color: #FFFFFF;
+}
 
 .container {
 	margin: 0 auto;
@@ -82,20 +94,24 @@ body {
 
 	&__slider {
 		display: flex;
+
 		&_wrapper {
 			position: relative;
 			overflow: hidden;
 		}
 	}
+
 	&__promo {
 		padding: 26px 31px;
 		height: 365px;
 	}
+
 	&__hashtag {
 		margin-top: 26px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+
 		&_link {
 			display: block;
 			margin-right: 6px;
