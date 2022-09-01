@@ -16,13 +16,11 @@ body {
 	display: none;
 }
 
-.swiper-button-next,
-.swiper-button-prev {}
-
 .swiper span {
 	display: flex;
 	margin-top: 0;
 	top: 178px;
+	right: -22px;
 	width: 44px;
 	height: 44px;
 	color: #353545;
