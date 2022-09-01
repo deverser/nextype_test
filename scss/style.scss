@@ -20,12 +20,16 @@ body {
 	justify-content: center;
 
 	&-bullet {
-		background-color: #191928 !important;
-		opacity: 0.5 !important;
+		width: 16px;
+		height: 4px;
+		background-color: #191928;
+		opacity: 0.5;
+		border-radius: 0%;
 
 		&-active {
-			background-color: #2244CC !important;
-			opacity: 1 !important;
+			width: 24px;
+			background-color: #2244CC;
+			opacity: 1;
 		}
 	}
 }
