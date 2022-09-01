@@ -27,13 +27,13 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1372px;
-  height: 818px;
+  width: 1328px;
 }
 
 .social {
   padding-top: 56px;
   padding-bottom: 80px;
+  height: 818px;
 }
 .social__header {
   font-weight: 700;
@@ -65,6 +65,9 @@ body {
   line-height: 26px;
   color: #4A4A4F;
 }
+.social__tabs > li:hover {
+  cursor: pointer;
+}
 .social__tab_active {
   border-bottom: 2px solid #2244CC;
 }
@@ -77,7 +80,6 @@ body {
 }
 
 .card {
-  margin: 0 8px;
   width: 320px;
   max-height: 472px;
   font-weight: 400;
@@ -114,4 +116,57 @@ body {
   margin-right: 6px;
   text-decoration: none;
   color: #2244CC;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 1200px;
+  }
+
+  .card img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+
+  .social {
+    padding: 16px;
+  }
+  .social__descr {
+    width: 344px;
+  }
+  .social__tabs {
+    width: 360px;
+    height: 42px;
+    left: calc(50% - 360px/2 + 8px);
+    top: calc(50% - 42px/2 - 170px);
+    overflow-x: scroll;
+  }
+  .social__tab {
+    margin-right: 39px;
+  }
+
+  .card img {
+    width: 320px;
+  }
+
+  .card__promo {
+    padding-top: 22px;
+  }
+
+  .swiper span {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
 }
