@@ -16,7 +16,7 @@ body {
 }
 
 .swiper-pagination {
-	display: flex;
+	display: none;
 	justify-content: center;
 
 	&-bullet {
@@ -30,6 +30,11 @@ body {
 			width: 24px;
 			background-color: #2244CC;
 			opacity: 1;
+
+			&-next,
+			&-next-next {
+				display: none;
+			}
 		}
 	}
 }
@@ -110,6 +115,13 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	color: #4A4A4F;
+	border: 1px solid #E1E1E6;
+
+	&:hover {
+		overflow-x: hidden;
+		cursor: pointer;
+	}
+
 
 	&__slider {
 		display: flex;
@@ -194,12 +206,15 @@ body {
 		}
 	}
 
-	.swiper span {
+	.swiper span.material-symbols-outlined {
 		display: none;
 	}
 
 	.swiper-pagination {
-		display: block;
+		display: flex;
+		position: relative;
+		margin-top: 32px !important;
+		width: 96px;
 	}
 }
 
@@ -209,4 +224,13 @@ body {
 			width: 344px;
 		}
 	}
+
+	.card {
+		width: 100%;
+	}
+
+	.card img {
+		width: 287px;
+	}
+
 }

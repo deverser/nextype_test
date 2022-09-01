@@ -9,6 +9,8 @@ const swiper = new Swiper(".mySwiper", {
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
+		//dynamicBullets: true,
+		//dynamicMainBullets: 4,
 	},
 	navigation: {
 		nextEl: ".swiper-button-next",
