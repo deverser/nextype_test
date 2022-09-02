@@ -79,7 +79,7 @@ body {
 	&__tabs {
 		display: flex;
 		justify-content: space-between;
-		width: 482px;
+		width: 522px;
 
 		&>li {
 			padding-bottom: 14px;
@@ -189,12 +189,27 @@ body {
 		padding: 16px;
 	}
 
+	.card {
+		width: 320px !important;
+	}
+
 	.card img {
 		width: 320px;
 	}
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+	.social {
+		&__tabs {
+			width: 425px;
+			overflow-x: scroll;
+
+			&>li {
+				line-height: 20px;
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 425px) {
 	.social {
@@ -203,7 +218,6 @@ body {
 			height: 42px;
 			left: calc(50% - 360px/2 + 8px);
 			top: calc(50% - 42px/2 - 170px);
-			overflow-x: scroll;
 		}
 
 		&__tab {

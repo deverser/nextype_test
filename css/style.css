@@ -77,7 +77,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 482px;
+  width: 522px;
 }
 .social__tabs > li {
   padding-bottom: 14px;
@@ -179,8 +179,21 @@ body {
     padding: 16px;
   }
 
+  .card {
+    width: 320px !important;
+  }
+
   .card img {
     width: 320px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .social__tabs {
+    width: 425px;
+    overflow-x: scroll;
+  }
+  .social__tabs > li {
+    line-height: 20px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -189,7 +202,6 @@ body {
     height: 42px;
     left: calc(50% - 360px/2 + 8px);
     top: calc(50% - 42px/2 - 170px);
-    overflow-x: scroll;
   }
   .social__tab {
     margin-right: 39px;
