@@ -1,5 +1,6 @@
 'use strict';
 
+// Слайдер SwiperJS
 const swiper = new Swiper(".mySwiper", {
 	slidesPerView: 4,
 	spaceBetween: 16,
@@ -41,3 +42,28 @@ const swiper = new Swiper(".mySwiper", {
 		}
 	}
 });
+
+//Реализация переключения табов на странице
+function openPage(pageName, elmnt, color) {
+  // Спрятать все элементы с классом "tabcontent" по умолчанию
+  let i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("card__slider_wrapper");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Убираем нижнюю границу всех tablink кнопок
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.borderBottom = "none";
+  }
+
+  // Показываем контент определенного таба
+  document.getElementById(pageName).style.display = "block";
+
+  // Добавляем индикатор кнопки открытого таба
+  elmnt.style.borderBottom = "2px solid" + color;
+}
+
+// Показываем дефолтный таб после загрузки страницы
+document.getElementById("defaultOpen").click();

@@ -79,11 +79,9 @@ body {
           justify-content: space-between;
   width: 522px;
 }
-.social__tabs > li {
-  padding-bottom: 14px;
-}
 .social__tabs > li .tablink {
   padding: 0;
+  padding-bottom: 14px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -95,9 +93,6 @@ body {
 }
 .social__tabs > li:hover {
   cursor: pointer;
-}
-.social__tab_active {
-  border-bottom: 2px solid #2244CC;
 }
 
 .divider {
