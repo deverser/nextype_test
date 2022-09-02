@@ -1,0 +1,48 @@
+.social {
+	padding-top: 56px;
+	padding-bottom: 80px;
+	height: 818px;
+
+	&__header {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 40px;
+		color: #19191E;
+		margin-bottom: 16px;
+	}
+
+	&__descr {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #4A4A4F;
+		margin-bottom: 32px;
+	}
+
+	&__tabs {
+		display: flex;
+		justify-content: space-between;
+		width: 522px;
+
+		&>li {
+			& .tablink {
+				padding: 0;
+				padding-bottom: 14px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 26px;
+				color: #4A4A4F;
+				background-color: #fff;
+				border: none;
+				outline: none;
+				cursor: pointer;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+	}
+}

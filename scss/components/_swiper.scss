@@ -1,0 +1,47 @@
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 300,
+		'GRAD' 0,
+		'opsz' 20;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-pagination {
+	display: none;
+	justify-content: center;
+
+	&-bullet {
+		width: 16px;
+		height: 4px;
+		background-color: #191928;
+		opacity: 0.5;
+		border-radius: 0%;
+
+		&-active {
+			width: 24px;
+			background-color: #2244CC;
+			opacity: 1;
+
+			&-next,
+			&-next-next {
+				display: none;
+			}
+		}
+	}
+}
+
+.swiper span.material-symbols-outlined {
+	display: flex;
+	margin-top: 0;
+	top: 178px;
+	right: -22px;
+	width: 44px;
+	height: 44px;
+	color: #353545;
+	background-color: #FFFFFF;
+}
