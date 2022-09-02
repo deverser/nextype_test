@@ -113,6 +113,21 @@ body {
 .card:hover {
   overflow-x: hidden;
   cursor: pointer;
+  -webkit-filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.1));
+}
+.card:hover::-webkit-scrollbar {
+  width: 2px;
+}
+.card:hover::-webkit-scrollbar-track {
+  background-color: #E1E1E6;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.card:hover::-webkit-scrollbar-thumb {
+  background-color: #2244CC;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 .card .gradient_block {
   position: -webkit-sticky;
