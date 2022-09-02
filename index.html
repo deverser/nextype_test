@@ -28,24 +28,24 @@
 				проверки направлений прогрессивного развития.
 			</p>
 			<ul class="social__tabs">
-				<li class="blog__tab social__tab">
-					<div>Блог</div>
+				<li class="social__tab">
+					<button class="tablink">Блог</button>
 				</li>
-				<li class="vk__tab social__tab">
-					<div>ВКонтакте</div>
+				<li class="social__tab">
+					<button class="tablink">ВКонтакте</button>
 				</li>
-				<li class="instagram__tab social__tab social__tab_active">
-					<div>Instagram</div>
+				<li class="social__tab social__tab_active">
+					<button class="tablink" id="defaultOpen">Instagram</button>
 				</li>
-				<li class="youtube__tab social__tab">
-					<div>YouTube</div>
+				<li class="social__tab">
+					<button class="tablink">YouTube</button>
 				</li>
-				<li class="facebook__tab social__tab">
-					<div>Facebook</div>
+				<li class="social__tab">
+					<button class="tablink">Facebook</button>
 				</li>
 			</ul>
 			<hr class="divider">
-			<div class="swiper mySwiper card__slider_wrapper">
+			<div id="instagram__tab" class="swiper mySwiper card__slider_wrapper">
 				<div class="swiper-wrapper card__slider">
 					<div class="swiper-slide card">
 						<img src="images/promo_card.png" alt="Промо карточка" class="card__img">
@@ -195,6 +195,10 @@
 				<!-- <div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div> -->
 			</div>
+			<div id="blog__tab"></div>
+			<div id="vk__tab"></div>
+			<div id="youtube__tab"></div>
+			<div id="facebook__tab"></div>
 			<div class="swiper-pagination"></div>
 		</section>
 	</div>

@@ -81,10 +81,17 @@ body {
 }
 .social__tabs > li {
   padding-bottom: 14px;
+}
+.social__tabs > li .tablink {
+  padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #4A4A4F;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .social__tabs > li:hover {
   cursor: pointer;
